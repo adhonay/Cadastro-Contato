@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Tp1</string>
+
+
+    <string name="action_settings">Settings</string>
+    <string name="nome">Nome</string>
+    <string name="edtNome">Nome</string>
+    <string name="edtPhone">Telefone</string>
+    <string name="edtEMail">E-Mail</string>
+    <string name="edAddress">Endereço</string>
+    <string name="bntConfirmar">Confirmar</string>
+    <string name="bntCancelar">Cancelar</string>
+    <string name="bntVoltar">Desfazer</string>
+
+
+</resources>

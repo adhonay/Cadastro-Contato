@@ -1,0 +1,137 @@
+<RelativeLayout
+
+
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+
+
+    android:background="#ffffff"
+    android:focusable="false">
+
+
+    <EditText
+        android:id="@+id/edNome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="textPersonName"
+        android:hint="@string/edtNome"
+        android:gravity="center"
+        android:ems="10"
+        android:singleLine="true"
+        android:layout_centerVertical="true"
+        android:layout_alignLeft="@+id/edPhone"
+        android:layout_alignStart="@+id/edPhone" />
+
+
+
+    <EditText
+        android:id="@+id/edPhone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="phone"
+        android:hint="@string/edtPhone"
+        android:gravity="center"
+        android:ems="10"
+        android:singleLine="true"
+
+        android:layout_below="@+id/edNome"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/edEMail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/edtEMail"
+        android:gravity="center"
+        android:inputType="textEmailAddress"
+
+
+        android:layout_below="@+id/edPhone"
+        android:layout_alignRight="@+id/edNome"
+        android:layout_alignEnd="@+id/edNome"
+        android:layout_alignLeft="@+id/edPhone"
+        android:layout_alignStart="@+id/edPhone" />
+
+    <EditText
+        android:id="@+id/edAddress"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:singleLine="true"
+        android:hint="@string/edAddress"
+        android:gravity="center"
+
+        android:layout_below="@+id/edEMail"
+        android:layout_alignRight="@+id/edEMail"
+        android:layout_alignEnd="@+id/edEMail"
+        android:layout_alignLeft="@+id/edEMail"
+        android:layout_alignStart="@+id/edEMail" />
+
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:id="@+id/lytAlinhado"
+        android:layout_below="@id/edAddress"
+
+        >
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_width="180dp"
+        android:layout_height="180dp"
+        android:id="@+id/imgHead"
+        android:src="@mipmap/brasao_puc"
+        android:onClick="onClickImage"
+
+
+        android:layout_marginTop="38dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignRight="@+id/edNome"
+        android:layout_alignEnd="@+id/edNome"
+        android:layout_alignLeft="@+id/edNome"
+        android:layout_alignStart="@+id/edNome"
+        android:contentDescription="@mipmap/brasao_puc" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bntConfirmar"
+        android:layout_gravity="center"
+        android:id="@+id/btnConfirmar"
+        android:onClick="onClickConfirmar"
+
+        android:layout_below="@+id/lytAlinhado"
+        android:layout_alignLeft="@+id/edAddress"
+        android:layout_alignStart="@+id/edAddress"
+        android:layout_marginTop="39dp"
+        android:background="#ffffff"
+        android:backgroundTint="#000000"
+        android:textColor="#ffffff" />
+
+    <Button
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/bntCancelar"
+    android:layout_gravity="center"
+    android:id="@+id/btnCancelar"
+    android:onClick="onClickCancelar"
+
+        android:layout_below="@+id/lytAlinhado"
+        android:layout_alignRight="@+id/edAddress"
+        android:layout_alignEnd="@+id/edAddress"
+        android:backgroundTint="#000000"
+        android:textColor="#ffffff"
+        android:layout_alignBottom="@+id/btnConfirmar"
+        android:layout_alignTop="@+id/btnConfirmar"
+        android:background="#000000" />
+
+</RelativeLayout>

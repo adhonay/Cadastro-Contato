@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="blue">#006400</color>
+    <color name="limeGreen">#32CD32</color>
+    <color name="lime">#00FF00</color>
+    <color name="forestGreen">#228B22</color>
+    <color name="paleGreen">#98FB98</color>
+    <color name="lightGreen">#90EE90</color>
+    <color name="darkSeaGreen">#8FBC8F</color>
+    <color name="DeepSkyBlue">#00BFFF</color>
+
+
+
+</resources>

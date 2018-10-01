@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    >
+
+
+
+
+
+
+    <TableLayout
+
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="300dp"
+        android:layout_height="230dp"
+        android:stretchColumns="1"
+        android:shrinkColumns="2"
+        android:id="@+id/tableLayout"
+        android:layout_above="@+id/btnVoltar"
+        android:layout_alignLeft="@+id/edtfoto"
+        android:layout_alignStart="@+id/edtfoto"
+        android:layout_alignRight="@+id/edtfoto"
+        android:layout_alignEnd="@+id/edtfoto">
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txNome"
+                android:layout_column="1"
+                android:text="Nome"
+                android:padding="15dip"
+                android:nextFocusDown="@+id/edtPhone"
+                />
+            <ImageButton
+                android:id="@+id/btnSaveContacts"
+                android:background="@mipmap/ic_contact_phone_black_48dp"
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:onClick="onClickContacts"
+                android:contentDescription="@null"
+                />
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txPhone"
+                android:layout_column="1"
+                android:text="Telefone"
+                android:padding="15dip"
+                android:nextFocusDown="@+id/edtEmail"
+                />
+            <ImageButton
+                android:id="@+id/btnCall"
+                android:background="@mipmap/ic_call_black_48dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:layout_width="36dp"
+                android:onClick="onClickCall"
+                android:contentDescription="@null"
+                />
+
+        </TableRow>
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txEmail"
+                android:layout_column="1"
+                android:text="E-Mail"
+                android:padding="15dip"
+                android:nextFocusDown="@+id/edAddress"
+                android:onClick="onClickMail"
+                />
+            <ImageButton
+                android:id="@+id/btnSendEmail"
+                android:background="@mipmap/ic_email_black_48dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:onClick="onClickMail"
+                android:contentDescription="@null"
+                />
+        </TableRow>
+
+
+
+        <TableRow>
+            <TextView
+                android:id="@+id/txAddress"
+                android:layout_column="1"
+                android:text="Endereço"
+                android:padding="15dip" />
+            <ImageButton
+                android:id="@+id/btnLocation"
+                android:background="@mipmap/ic_location_on_black_48dp"
+                android:layout_height="36dp"
+                android:layout_gravity="center"
+                android:onClick="onClickLocalize"
+                android:contentDescription="@null"
+                />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceSmall"
+                android:text="    Tirar Foto"
+                android:id="@+id/textView"
+                android:layout_column="1" />
+
+            <Button
+                android:layout_width="36dp"
+                android:layout_height="36dp"
+
+                android:id="@+id/edtbtfoto"
+                android:layout_column="2"
+                android:background="@mipmap/ic_photo_black_48dp" />
+        </TableRow>
+
+    </TableLayout>
+
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/bntVoltar"
+        android:id="@+id/btnVoltar"
+        android:onClick="onClickVoltar"
+        android:layout_marginBottom="30dp"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:textColor="#ffffff"
+        android:background="#000000"
+        android:backgroundTint="#000000" />
+
+    <ImageView
+        android:layout_height="210dp"
+        android:layout_width="300dp"
+
+        android:id="@+id/edtfoto"
+        android:src="@mipmap/brasao_puc"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:contentDescription="@mipmap/brasao_puc" />
+
+
+</RelativeLayout>
